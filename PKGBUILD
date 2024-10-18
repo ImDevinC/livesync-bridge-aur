@@ -2,7 +2,7 @@
 
 pkgname=livesync-bridge
 pkgver=0.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Self-hosted Obsidian Livesync connector"
 arch=('x86_64')
 url="https://github.com/vrtmrz/livesync-bridge"

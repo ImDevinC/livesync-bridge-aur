@@ -3,3 +3,7 @@ vault*/*
 !.gitempty
 !*.sample.json
 *.log
+*.pkg.tar.zst
+livesync-bridge/
+pkg/
+src/

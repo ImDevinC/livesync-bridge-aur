@@ -4,10 +4,10 @@ After=network-online.target
 
 [Service]
 Type=simple
-RemainAfterExit=yes
 WorkingDirectory=/usr/lib/livesync-bridge
 ExecStart=/usr/bin/deno run -A main.ts
 Environment=LSB_CONFIG="%E/livesync-bridge/%i.json"
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
