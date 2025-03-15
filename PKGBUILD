@@ -1,6 +1,6 @@
 # Maintainer: Devin Collins <me@imdevinc.com>
 
-pkgname=livesync-bridge
+pkgname=livesync-bridge-git
 pkgver=0.0.1
 pkgrel=2
 pkgdesc="Self-hosted Obsidian Livesync connector"
@@ -19,7 +19,7 @@ depends=(deno git)
 
 package() {
   install -Dm 644 livesync-bridge@.service "${pkgdir}/usr/lib/systemd/user/livesync-bridge@.service"
-  cd "${pkgname}"
+  cd "livesync-bridge"
   git init
   git submodule update --init --recursive
 
