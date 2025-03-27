@@ -15,7 +15,7 @@ sha256sums=(
   'SKIP'
 )
 options=(!strip !debug)
-depends=(deno git)
+depends=(git)
 
 package() {
   install -Dm 644 livesync-bridge@.service "${pkgdir}/usr/lib/systemd/user/livesync-bridge@.service"
